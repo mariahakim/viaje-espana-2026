@@ -170,6 +170,25 @@ dialog::backdrop { background: rgba(15,29,24,.67); backdrop-filter: blur(3px); }
 .modal-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
 .modal-actions a { text-decoration: none; padding: 12px 15px; border-radius: 3px; background: var(--forest); color: white; font-size: 11px; font-weight: 800; }
 .modal-actions a.secondary { background: #ecece6; color: var(--ink); }
+.document-viewer { padding: 34px 20px 24px; }
+.document-viewer h2 { font-size: clamp(24px, 4vw, 34px); }
+.document-frame {
+  width: 100%;
+  height: min(68vh, 760px);
+  margin-top: 14px;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  background: white;
+}
+.document-image {
+  width: 100%;
+  max-height: 68vh;
+  object-fit: contain;
+  display: block;
+  margin-top: 14px;
+  border-radius: 16px;
+  background: white;
+}
 .sensitive { transition: filter .2s; }
 body.private .sensitive { filter: blur(7px); user-select: none; }
 
@@ -331,6 +350,7 @@ h1 span { color: rgba(29,29,31,.27); }
 }
 .bottom-nav a.active { color: #0071e3; }
 dialog { border-radius: 24px; background: rgba(255,255,255,.96); backdrop-filter: blur(30px); }
+.document-viewer { padding: 36px 22px 24px; }
 .modal-close { background: #e8e8ed; }
 .modal-body h2 { font-weight: 700; }
 .modal-actions a { border-radius: 12px; background: #0071e3; }

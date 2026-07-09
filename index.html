@@ -7,7 +7,7 @@
     <meta name="description" content="Itinerario de José María y María — España 2026" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=22" />
+    <link rel="stylesheet" href="./styles.css?v=27" />
     <title>Nuestro viaje · España 2026</title>
   </head>
   <body>
@@ -62,12 +62,9 @@
               <p class="eyebrow dark">ANTES DE SALIR</p>
               <h2>Pendientes</h2>
             </div>
-            <span class="count-pill" id="pendingCount">5</span>
+            <span class="count-pill" id="pendingCount">2</span>
           </div>
           <div class="task-list" id="taskList">
-            <label class="task"><input type="checkbox" data-task="mallorca-car" /><span class="check"></span><span><strong>Reservar coche en Mallorca</strong><small>Recogida 25 jul · entrega 28 jul</small></span></label>
-            <label class="task"><input type="checkbox" data-task="menorca-car" /><span class="check"></span><span><strong>Agregar reserva de coche en Menorca</strong><small>Recogida 28 jul · entrega 1 ago</small></span></label>
-            <label class="task"><input type="checkbox" data-task="santander-car" /><span class="check"></span><span><strong>Agregar coche en Santander</strong><small>Recogida 1 ago · entrega 18 ago</small></span></label>
             <label class="task"><input type="checkbox" data-task="london-flights" /><span class="check"></span><span><strong>Reservar vuelos a Londres</strong><small>Fechas tentativas · 3–8 ago</small></span></label>
             <label class="task"><input type="checkbox" data-task="return-train" /><span class="check"></span><span><strong>Reservar tren Santander–Madrid</strong><small>18 de agosto · horario pendiente</small></span></label>
           </div>
@@ -142,6 +139,11 @@
                   <span class="event-main"><small>HOTEL · 25–28 JUL</small><strong>Universal Hotel Aquamarin</strong><em>Sant Elm · habitación doble vista al mar</em></span>
                   <span class="chevron">›</span>
                 </button>
+                <button class="event-card transport-card" data-modal="mallorca-car">
+                  <span class="event-icon">🚗</span>
+                  <span class="event-main"><small>COCHE · BOOKING CARS · WIBER</small><strong>22:00 · Recoger coche</strong><em>Palma de Mallorca Aeropuerto · Hyundai Kona o similar</em></span>
+                  <span class="status confirmed">Confirmado</span>
+                </button>
               </div>
             </article>
 
@@ -149,6 +151,11 @@
               <div class="date-rail"><span>MAR</span><strong>28</strong><span>JUL</span></div>
               <div class="day-content">
                 <p class="city-kicker">MALLORCA → MENORCA</p>
+                <button class="event-card transport-card" data-modal="mallorca-car">
+                  <span class="event-icon">🚗</span>
+                  <span class="event-main"><small>COCHE · WIBER</small><strong>07:30 · Devolver coche</strong><em>Palma de Mallorca Aeropuerto</em></span>
+                  <span class="status confirmed">Confirmado</span>
+                </button>
                 <button class="event-card transport-card" data-modal="ferry">
                   <span class="event-icon">≈</span>
                   <span class="event-main"><small>BALEARIA · JAUME III</small><strong>08:30 <i></i> 09:45</strong><em>Alcúdia → Ciutadella · embarque desde 07:30</em></span>
@@ -159,6 +166,11 @@
                   <span class="event-main"><small>HOTEL · 28 JUL–1 AGO</small><strong>Caramelo Marina Cala'n Bosch</strong><em>Adults Only · Double Caramelo Room</em></span>
                   <span class="chevron">›</span>
                 </button>
+                <button class="event-card transport-card" data-modal="menorca-car">
+                  <span class="event-icon">🚗</span>
+                  <span class="event-main"><small>COCHE · BOOKING CARS · OWNERS CARS</small><strong>10:30 · Recoger coche</strong><em>Cala'n Bosch · Peugeot 308 o similar</em></span>
+                  <span class="status confirmed">Confirmado</span>
+                </button>
               </div>
             </article>
 
@@ -166,10 +178,20 @@
               <div class="date-rail"><span>SÁB</span><strong>01</strong><span>AGO</span></div>
               <div class="day-content">
                 <p class="city-kicker">MENORCA → SANTANDER → LLANES</p>
+                <button class="event-card transport-card" data-modal="menorca-car">
+                  <span class="event-icon">🚗</span>
+                  <span class="event-main"><small>COCHE · OWNERS CARS</small><strong>09:00 · Devolver coche</strong><em>Cala'n Bosch</em></span>
+                  <span class="status confirmed">Confirmado</span>
+                </button>
                 <button class="event-card transport-card" data-modal="menorca-santander">
                   <span class="event-icon">✈</span>
                   <span class="event-main"><small>VOLOTEA V73872 · 1 H 40 MIN</small><strong>09:45 <i></i> 11:25</strong><em>MAH → SDR · asientos 15A / 15B</em></span>
                   <span class="status warning">PNR pendiente</span>
+                </button>
+                <button class="event-card transport-card" data-modal="santander-car">
+                  <span class="event-icon">🚗</span>
+                  <span class="event-main"><small>COCHE · BOOKING CARS · HERTZ</small><strong>13:00 · Recoger coche</strong><em>Santander Aeropuerto · Volkswagen T-Cross o similar</em></span>
+                  <span class="status confirmed">Confirmado</span>
                 </button>
                 <button class="event-card stay-card" data-modal="llanes">
                   <span class="event-icon">⌂</span>
@@ -200,10 +222,15 @@
                   <span class="event-main"><small>REGRESO A CASA</small><strong>Santander → Madrid</strong><em>Entrega del coche · tren pendiente</em></span>
                   <span class="status pending">Tren pendiente</span>
                 </button>
+                <button class="event-card transport-card" data-modal="santander-car">
+                  <span class="event-icon">🚗</span>
+                  <span class="event-main"><small>COCHE · HERTZ</small><strong>13:00 · Devolver coche</strong><em>Santander Aeropuerto</em></span>
+                  <span class="status confirmed">Confirmado</span>
+                </button>
                 <button class="event-card transport-card" data-modal="return-flight">
                   <span class="event-icon">✈</span>
                   <span class="event-main"><small>AEROMÉXICO AM 2 · 11 H 35 MIN</small><strong>10:45 <i></i> 14:20</strong><em>MAD T1 → MEX T2</em></span>
-                  <span class="status confirmed">Confirmado</span>
+                  <span class="status warning">Por confirmar</span>
                 </button>
               </div>
             </article>
@@ -322,12 +349,15 @@
             </div>
           </div>
           <div class="document-grid">
-            <a class="document-card" href="./public/documents/tren-madrid-malaga.pdf" target="_blank"><span>PDF</span><strong>Boletos Iryo</strong><small>Madrid → Málaga · 3 págs.</small></a>
-            <a class="document-card" href="./public/documents/vuelo-menorca-santander.pdf?v=3" target="_blank" rel="noopener" type="application/pdf"><span>PDF</span><strong>E-ticket Volotea</strong><small>Menorca → Santander · 3 págs.</small></a>
-            <a class="document-card" href="./public/documents/reserva-ryanair.png" target="_blank"><span>IMG</span><strong>Reserva Ryanair</strong><small>Málaga → Palma</small></a>
-            <a class="document-card" href="./public/documents/reserva-ferry-confirmacion.png" target="_blank"><span>IMG</span><strong>Ferry Balearia</strong><small>Confirmación y localizador</small></a>
-            <a class="document-card" href="./public/documents/reserva-aquamarin.png" target="_blank"><span>IMG</span><strong>Hotel Aquamarin</strong><small>Confirmación Booking.com</small></a>
-            <a class="document-card" href="./public/documents/reserva-caramelo.png" target="_blank"><span>IMG</span><strong>Hotel Caramelo</strong><small>Confirmación Booking.com</small></a>
+            <a class="document-card" href="./public/documents/tren-madrid-malaga.pdf"><span>PDF</span><strong>Boletos Iryo</strong><small>Madrid → Málaga · 3 págs.</small></a>
+            <a class="document-card" href="./public/documents/vuelo-menorca-santander.pdf?v=3" type="application/pdf"><span>PDF</span><strong>E-ticket Volotea</strong><small>Menorca → Santander · 3 págs.</small></a>
+            <a class="document-card" href="./public/documents/reserva-ryanair.png"><span>IMG</span><strong>Reserva Ryanair</strong><small>Málaga → Palma</small></a>
+            <a class="document-card" href="./public/documents/reserva-ferry-confirmacion.png"><span>IMG</span><strong>Ferry Balearia</strong><small>Confirmación y localizador</small></a>
+            <a class="document-card" href="./public/documents/reserva-aquamarin.png"><span>IMG</span><strong>Hotel Aquamarin</strong><small>Confirmación Booking.com</small></a>
+            <a class="document-card" href="./public/documents/reserva-caramelo.png"><span>IMG</span><strong>Hotel Caramelo</strong><small>Confirmación Booking.com</small></a>
+            <a class="document-card" href="./public/documents/reserva-coche-mallorca.png"><span>IMG</span><strong>Coche Mallorca</strong><small>Wiber · Hyundai Kona</small></a>
+            <a class="document-card" href="./public/documents/reserva-coche-menorca.png"><span>IMG</span><strong>Coche Menorca</strong><small>Owners Cars · Peugeot 308</small></a>
+            <a class="document-card" href="./public/documents/reserva-coche-santander.png"><span>IMG</span><strong>Coche Santander</strong><small>Hertz · Volkswagen T-Cross</small></a>
           </div>
         </section>
 
@@ -425,6 +455,6 @@
       <div id="modalContent"></div>
     </dialog>
 
-    <script src="./app.js?v=22"></script>
+    <script src="./app.js?v=27"></script>
   </body>
 </html>

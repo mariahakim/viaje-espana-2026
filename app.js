@@ -32,6 +32,12 @@ const details = {
     rows: [["Salida", "19:35 · Málaga (AGP)"], ["Llegada", "21:05 · Palma (PMI)"], ["Localizador", '<span class="sensitive">O71RTN</span>'], ["José María", "10A · 20 kg + prioridad"], ["María", "10B · 20 kg + prioridad"]],
     links: [["Gestionar reserva", "https://www.ryanair.com/es/es/trip/manage/BookingId:946316152?utm_source=itinerary-email&utm_medium=email"], ["Ver comprobante", "./public/documents/reserva-ryanair.png"]]
   },
+  "mallorca-car": {
+    icon: "🚗", title: "Coche en Mallorca", subtitle: "Booking.com Cars · Wiber · Hyundai Kona o similar.",
+    rows: [["Confirmación", '<span class="sensitive">742705751</span>'], ["Recogida", "25 julio 2026 · 22:00"], ["Lugar", "Palma de Mallorca Aeropuerto · 16 Carrer Can Singala, Palma"], ["Devolución", "28 julio 2026 · 07:30"], ["Empresa", "Wiber"], ["Coche", "Hyundai Kona o similar · automático · aire acondicionado"], ["Pasajeros / equipaje", "5 asientos · 4 puertas · 2 maletas grandes"], ["Conductor", "José María Perez Garcia"], ["Vuelo", "FR5677"]],
+    note: "Para recoger: vale de confirmación, carné de conducir, pasaporte/DNI y tarjeta de crédito a nombre del conductor principal.",
+    links: [["Gestionar reserva", "https://cars.booking.com/my-booking/8NWFRhgabZErya_QgGEUCLRaNcqO4IIY4Ym-hrilUNtPVFD82CSYc0wTapAeGgTBhkse6V2qhGJYOuoauUhNgaYKkIbQX6CpzT1oijsOFVvw_5Nzgd8BVs2GJfdb9uUCs1FIYKBXYBHnAKZWfFW8A5yFfHfMK3fMWy8T142Zx1E?adcamp=bookingcom-PBBC+-2026-07-09&preflang=ES&mailType=2008&adco=0&envelopeId=bd2eeb77-1cc1-42b9-8832-7b7653bf6727&cor=MX&adplat=email&prefcurrency=MXN&mailTypeName=PBBC+&aid=2311236&affiliateCode=booking-cars"]]
+  },
   aquamarin: {
     icon: "⌂", title: "Universal Hotel Aquamarin", subtitle: "Sant Elm, Mallorca · del 25 al 28 de julio.",
     rows: [["Entrada", "25 julio · desde 14:00"], ["Salida", "28 julio · 07:00–12:00"], ["Habitación", "Doble vista al mar · 2 camas"], ["Confirmación", '<span class="sensitive">6367610656</span>'], ["PIN", '<span class="sensitive">1274</span>'], ["Dirección", "Cala Conils 4, 07159 Sant Elm"]],
@@ -47,15 +53,27 @@ const details = {
     rows: [["Entrada", "28 julio · desde 15:00"], ["Salida", "1 agosto · hasta 11:00"], ["Habitación", "Double Caramelo Room"], ["Confirmación", '<span class="sensitive">5334074345</span>'], ["PIN", '<span class="sensitive">7861</span>'], ["Dirección", "Paseo Marítimo S/N, 07769 Cala'n Bosch"]],
     links: [["Abrir en Google Maps", "https://www.google.com/maps/search/?api=1&query=Caramelo+Marina+Cala%27n+Bosch%2C+Paseo+Mar%C3%ADtimo+S%2FN%2C+07769+Cala%27n+Bosch%2C+Espa%C3%B1a"], ["Gestionar en Booking", "https://secure.booking.com/confirmation.es.html?label=mkt123sc-2111cbfe-230f-4606-96a3-0903ef5dc9a9&aid=2311236&sid=04cb871c7b25a45e15f51bfe75907595&source=confirmation_error_validation&bn=5334074345"], ["Ver comprobante", "./public/documents/reserva-caramelo.png"]]
   },
+  "menorca-car": {
+    icon: "🚗", title: "Coche en Menorca", subtitle: "Booking.com Cars · Owners Cars · Peugeot 308 o similar.",
+    rows: [["Confirmación", '<span class="sensitive">717389764</span>'], ["Recogida", "28 julio 2026 · 10:30"], ["Lugar", "Menorca - Cala'n Bosch · Carrer Circumval·lació, Local 1"], ["Devolución", "1 agosto 2026 · 09:00"], ["Empresa", "Owners Cars"], ["Coche", "Peugeot 308 o similar · automático · aire acondicionado"], ["Pasajeros / equipaje", "5 asientos · 4 puertas · 2 maletas grandes"], ["Conductor", "José María Perez Garcia"], ["Pagado", "MXN 4,428.91"]],
+    note: "Para recoger: vale de confirmación, carné de conducir, pasaporte/DNI y tarjeta de crédito a nombre del conductor principal.",
+    links: [["Gestionar reserva", "https://cars.booking.com/my-booking/8NWFRhgabZErya_QgGEUCLRaNcqO4IIY4Ym-hrilUNtPVFD82CSYc0wTapAeGgTBhkse6V2qhGJYOuoauUhNgaYKkIbQX6CpzT1oijsOFVvw_5Nzgd8BVs2GJfdb9uUCPLr303W-EfqFgUur89dAxZyFfHfMK3fMWy8T142Zx1E?adcamp=bookingcom-PBBC+-2026-07-09&preflang=ES&mailType=2008&adco=0&envelopeId=f2969b07-06d9-4778-b4a8-1ef6ab466407&cor=MX&adplat=email&prefcurrency=MXN&mailTypeName=PBBC+&aid=2311236&affiliateCode=booking-cars"]]
+  },
   "menorca-santander": {
     icon: "✈", title: "Menorca → Santander", subtitle: "Volotea V73872 · sábado 1 de agosto.",
     rows: [["Salida", "09:45 · Menorca (MAH)"], ["Llegada", "11:25 · Santander (SDR)"], ["Reserva Kiwi", '<span class="sensitive">809 161 529</span>'], ["PNR aerolínea", "Pendiente de emisión"], ["María", "15A · mano 8 kg + facturada 20 kg"], ["José María", "15B · mano 8 kg + facturada 20 kg"]],
     note: "El e-ticket indica hacer el check-in directamente con la aerolínea.",
     links: [["Abrir e-ticket PDF", "./public/documents/vuelo-menorca-santander.pdf?v=3"]]
   },
+  "santander-car": {
+    icon: "🚗", title: "Coche en Santander", subtitle: "Booking.com Cars · Hertz · Volkswagen T-Cross o similar.",
+    rows: [["Confirmación", '<span class="sensitive">790121495</span>'], ["Recogida", "1 agosto 2026 · 13:00"], ["Lugar", "Santander Aeropuerto · Seve Ballesteros, Maliaño"], ["Devolución", "18 agosto 2026 · 13:00"], ["Empresa", "Hertz"], ["Coche", "Volkswagen T-Cross o similar · automático · aire acondicionado"], ["Pasajeros / equipaje", "5 asientos · 5 puertas · 2 maletas grandes"], ["Conductor", "José María Perez Garcia"], ["Pagado", "MXN 14,214.46"]],
+    note: "Para recoger: vale de confirmación, carné de conducir, pasaporte/DNI y tarjeta de crédito a nombre del conductor principal.",
+    links: [["Gestionar reserva", "https://cars.booking.com/my-booking/8NWFRhgabZErya_QgGEUCLRaNcqO4IIY4Ym-hrilUNtPVFD82CSYc0wTapAeGgTBhkse6V2qhGJYOuoauUhNgaYKkIbQX6CpzT1oijsOFVvw_5Nzgd8BVs2GJfdb9uUCyq_RfuhnpH0TmzTkQnme8pyFfHfMK3fMWy8T142Zx1E?adcamp=bookingcom-PBBC+-2026-07-09&preflang=ES&mailType=2008&adco=0&envelopeId=bc9b4e38-0c0c-41a2-b350-caf8aaec0dea&cor=MX&adplat=email&prefcurrency=MXN&mailTypeName=PBBC+&aid=2311236&affiliateCode=booking-cars"]]
+  },
   llanes: {
     icon: "⌂", title: "Departamento en Llanes", subtitle: "Llegada el 1 de agosto después de recoger el coche en Santander.",
-    rows: [["Entrada", "1 agosto 2026"], ["Salida", "18 agosto 2026"], ["Estancia", "17 noches"], ["Traslado", "Santander → Llanes en coche"], ["Dirección", "Avenida de la Paz 3, departamento 1B, Llanes, España"], ["Reserva de coche", "Pendiente"]],
+    rows: [["Entrada", "1 agosto 2026"], ["Salida", "18 agosto 2026"], ["Estancia", "17 noches"], ["Traslado", "Santander → Llanes en coche"], ["Dirección", "Avenida de la Paz 3, departamento 1B, Llanes, España"], ["Coche", "Hertz · Volkswagen T-Cross o similar"]],
     links: [["Abrir en Google Maps", "https://www.google.com/maps/search/?api=1&query=Avenida+de+la+Paz+3%2C+Llanes%2C+Espa%C3%B1a"]]
   },
   london: {
@@ -64,11 +82,12 @@ const details = {
   },
   "return-home": {
     icon: "↟", title: "Llanes → Santander → Madrid", subtitle: "Primera parte del regreso, el martes 18 de agosto.",
-    rows: [["Salida de Llanes", "18 agosto 2026"], ["Coche", "Entrega en Santander"], ["Tren", "Santander → Madrid"], ["Estado", "Pendiente de reservar"], ["Horario", "Pendiente"]]
+    rows: [["Salida de Llanes", "18 agosto 2026"], ["Coche", "Entrega en Santander Aeropuerto · 13:00"], ["Reserva coche", '<span class="sensitive">790121495</span> · Hertz'], ["Tren", "Santander → Madrid"], ["Estado tren", "Pendiente de reservar"], ["Horario tren", "Pendiente"]],
+    links: [["Gestionar coche", "https://cars.booking.com/my-booking/8NWFRhgabZErya_QgGEUCLRaNcqO4IIY4Ym-hrilUNtPVFD82CSYc0wTapAeGgTBhkse6V2qhGJYOuoauUhNgaYKkIbQX6CpzT1oijsOFVvw_5Nzgd8BVs2GJfdb9uUCyq_RfuhnpH0TmzTkQnme8pyFfHfMK3fMWy8T142Zx1E?adcamp=bookingcom-PBBC+-2026-07-09&preflang=ES&mailType=2008&adco=0&envelopeId=bc9b4e38-0c0c-41a2-b350-caf8aaec0dea&cor=MX&adplat=email&prefcurrency=MXN&mailTypeName=PBBC+&aid=2311236&affiliateCode=booking-cars"]]
   },
   "return-flight": {
-    icon: "✈", title: "Madrid → Ciudad de México", subtitle: "Aeroméxico AM 2 · martes 18 de agosto de 2026.",
-    rows: [["Salida", "10:45 · Madrid (MAD) · Terminal 1"], ["Llegada", "14:20 · Ciudad de México (MEX) · Terminal 2"], ["Duración", "11 h 35 min"], ["Confirmación", '<span class="sensitive">HXOWUR</span>'], ["Pasajeros", "José María Perez Garcia · Maria Hakim Morfin"]],
+    icon: "✈", title: "Madrid → Ciudad de México", subtitle: "Aeroméxico AM 2 · martes 18 de agosto de 2026 · por confirmar.",
+    rows: [["Estado", "Por confirmar"], ["Salida", "10:45 · Madrid (MAD) · Terminal 1"], ["Llegada", "14:20 · Ciudad de México (MEX) · Terminal 2"], ["Duración", "11 h 35 min"], ["Confirmación", '<span class="sensitive">HXOWUR</span>'], ["Pasajeros", "José María Perez Garcia · Maria Hakim Morfin"]],
     note: "No se adjunta documento: los boletos están en la app de Aeroméxico."
   }
 };
@@ -79,6 +98,26 @@ main.insertBefore(document.querySelector("#lugares"), document.querySelector("#p
 
 const modal = document.querySelector("#detailModal");
 const modalContent = document.querySelector("#modalContent");
+const isLocalDocument = href => href.startsWith("./public/documents/");
+const linkMarkup = (label, href, index = 0) => {
+  const className = index ? ' class="secondary"' : "";
+  const externalAttrs = isLocalDocument(href) ? "" : ' target="_blank" rel="noreferrer"';
+  return `<a${className} href="${href}"${externalAttrs}>${label}</a>`;
+};
+const openDocumentViewer = (href, title = "Documento") => {
+  const cleanHref = href.split("#")[0];
+  const isPdf = cleanHref.toLowerCase().includes(".pdf");
+  const media = isPdf
+    ? `<iframe class="document-frame" src="${href}" title="${title}"></iframe>`
+    : `<img class="document-image" src="${href}" alt="${title}" />`;
+  modalContent.innerHTML = `<div class="modal-body document-viewer">
+    <p class="eyebrow dark">DOCUMENTO</p>
+    <h2>${title}</h2>
+    ${media}
+    <div class="modal-actions"><a class="secondary" href="${href}">Abrir archivo directo</a></div>
+  </div>`;
+  if (!modal.open) modal.showModal();
+};
 document.querySelectorAll("[data-modal]").forEach(button => button.addEventListener("click", () => {
   const d = details[button.dataset.modal];
   modalContent.innerHTML = `<div class="modal-body">
@@ -86,10 +125,19 @@ document.querySelectorAll("[data-modal]").forEach(button => button.addEventListe
     <h2>${d.title}</h2><p>${d.subtitle}</p>
     <div class="detail-list">${d.rows.map(([label, value]) => `<div class="detail-row"><span>${label}</span><strong>${value}</strong></div>`).join("")}</div>
     ${d.note ? `<p>${d.note}</p>` : ""}
-    ${d.links ? `<div class="modal-actions">${d.links.map(([label, href], index) => `<a ${index ? 'class="secondary"' : ""} href="${href}" target="_blank" rel="noreferrer">${label}</a>`).join("")}</div>` : ""}
+    ${d.links ? `<div class="modal-actions">${d.links.map(([label, href], index) => linkMarkup(label, href, index)).join("")}</div>` : ""}
   </div>`;
   modal.showModal();
 }));
+
+document.addEventListener("click", event => {
+  const documentLink = event.target.closest('a[href^="./public/documents/"]');
+  if (!documentLink) return;
+  event.preventDefault();
+  const card = documentLink.closest(".document-card");
+  const title = card?.querySelector("strong")?.textContent?.trim() || documentLink.textContent.trim() || "Documento";
+  openDocumentViewer(documentLink.getAttribute("href"), title);
+});
 
 document.querySelector("#modalClose").addEventListener("click", () => modal.close());
 modal.addEventListener("click", event => {

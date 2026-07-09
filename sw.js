@@ -1,4 +1,4 @@
-const CACHE = "viaje-espana-2026-v22";
+const CACHE = "viaje-espana-2026-v27";
 const ASSETS = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.json", "./icon.svg"];
 self.addEventListener("install", event => {
   self.skipWaiting();
