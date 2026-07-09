@@ -1,0 +1,12 @@
+{
+  "name": "Nuestro viaje · España 2026",
+  "short_name": "Viaje 2026",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f0e6",
+  "theme_color": "#213c34",
+  "lang": "es",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
